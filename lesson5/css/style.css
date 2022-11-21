@@ -31,7 +31,6 @@ li a {
   text-align: center;
   font-size: 18px;
   color: rgba(130, 130, 130, 1);
-
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -57,6 +56,7 @@ p {
 }
 
 .image-wrapper {
+  margin: auto;
   max-width: 970px;
 }
 
@@ -138,10 +138,6 @@ p {
 
 .checked {
   color: black;
-}
-
-#portfolio {
-  display: inline-block;
 }
 
 .portfolio__card img,
