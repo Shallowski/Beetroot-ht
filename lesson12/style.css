@@ -190,6 +190,14 @@ body .container .grid-container .grid-item {
   transition: all 0.5s ease-in-out;
 }
 
+.grid-item {
+  opacity: 0.8;
+}
+
+.grid-item:hover {
+  opacity: 1;
+}
+
 .grid-item:hover .card-overlay {
   opacity: 1;
 }
