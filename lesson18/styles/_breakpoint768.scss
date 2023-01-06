@@ -1,8 +1,8 @@
-@media (min-width: 769px) {
+@media (min-width: 1339px) {
   .top-nav,
   .title,
   .content-wrapper {
-    margin: 0 34px;
+    margin: 0 135px;
   }
 
   .top-nav {
@@ -24,8 +24,7 @@
     height: 600px;
   }
 
-  .latest-posts {
-    .post-wrapper {
+  .latest-posts .post-wrapper {
       margin-top: 45px;
       display: flex;
       gap: 20px;
@@ -37,7 +36,7 @@
         }
       }
     }
-  }
+  
 
   .info {
     display: flex;
@@ -62,10 +61,4 @@
   }
 }
 
-@media (min-width: 1339px) {
-  .top-nav,
-  .title,
-  .content-wrapper {
-    margin: 0 135px;
-  }
-}
+

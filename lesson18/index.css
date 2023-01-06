@@ -483,6 +483,7 @@ h5 {
   background-image: url(assets/images/first-screen-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 .article__picture img,
@@ -577,7 +578,7 @@ ul {
   fill: #565656;
 }
 
-@media (min-width: 321px) {
+@media (min-width: 769px) {
   h1 {
     text-align: left;
   }
@@ -627,11 +628,11 @@ ul {
     display: block;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1339px) {
   .top-nav,
   .title,
   .content-wrapper {
-    margin: 0 34px;
+    margin: 0 135px;
   }
   .top-nav {
     height: 100px;
@@ -681,13 +682,6 @@ ul {
   }
   .footer-wrapper .social {
     margin: 0;
-  }
-}
-@media (min-width: 1339px) {
-  .top-nav,
-  .title,
-  .content-wrapper {
-    margin: 0 135px;
   }
 }
 
