@@ -1,0 +1,61 @@
+@mixin font-set(
+  $font,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing
+) {
+  font-family: $font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin change-image-1($image-small, $image-medium, $image-big) {
+  content: url($image-small);
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+    content: url($image-medium);
+  }
+
+  @media (min-width: 1441px) {
+    content: url($image-big);
+  }
+}
+
+@mixin change-image-2($image-small, $image-medium, $image-big) {
+  content: url($image-small);
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+    content: url($image-medium);
+  }
+
+  @media (min-width: 1441px) {
+    content: url($image-big);
+  }
+}
+
+@mixin change-image-3($image-small, $image-medium, $image-big) {
+  content: url($image-small);
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+    content: url($image-medium);
+  }
+
+  @media (min-width: 1441px) {
+    content: url($image-big);
+  }
+}
+
+@mixin change-image-4($image-small, $image-medium, $image-big) {
+  content: url($image-small);
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+    content: url($image-medium);
+  }
+
+  @media (min-width: 1441px) {
+    content: url($image-big);
+  }
+}
