@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS animations Lesson21</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/facebook-gray.png" alt="facebook">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/facebook-black.png" alt="facebook">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/instagram-gray.png" alt="instagram">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/instagram-black.png" alt="instagram">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/shopify-gray.png" alt="shopify">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/shopify-black.png" alt="faceshopifybook">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/skype-gray.png" alt="skype">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/skype-black.png" alt="skype">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/pinterest-gray.png" alt="pinterest">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/pinterest-black.png" alt="pinterest">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/wix-gray.png" alt="wix">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/wix-black.png" alt="wix">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/saleforse-gray.png" alt="saleforse">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/saleforse-black.png" alt="saleforse">
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="assets/images/soundcloud-gray.png" alt="soundcloud">
+        </div>
+        <div class="flip-card-back">
+          <img src="assets/images/soundcloud-black.png" alt="soundcloud">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function flipCard() {
+      let cards = document.querySelectorAll('.card-container .flip-card-inner');
+      let randomIndex = Math.floor(Math.random() * cards.length);
+      cards[randomIndex].classList.toggle('flip');
+    }
+    setInterval(flipCard, 2000);
+  </script>
+</body>
+
+</html>
