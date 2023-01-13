@@ -1,0 +1,39 @@
+@mixin font-set(
+  $font,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing
+) {
+  font-family: $font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin minimize-menu() {
+  width: 86px;
+  li {
+    justify-content: center;
+  }
+  button {
+    position: absolute;
+    right: -20px;
+    img:first-child {
+      display: none;
+    }
+    img:nth-child(2) {
+      display: flex;
+    }
+  }
+  .divider {
+    display: block;
+  }
+  .description {
+    display: none;
+  }
+  .badge {
+    left: 35px;
+  }
+}
