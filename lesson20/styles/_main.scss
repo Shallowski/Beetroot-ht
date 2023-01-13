@@ -47,27 +47,19 @@ img {
 }
 
 .responsive-image-1 {
-  width: 100%;
-  height: auto;
-  @include change-image-1("assets/images/first-image-small.png", "assets/images/first-image-medium.png", "assets/images/first-image-big.png");
+  @include change-image("assets/images/first-image-small.png", "assets/images/first-image-medium.png", "assets/images/first-image-big.png");
 }
 
 .responsive-image-2 {
-  width: 100%;
-  height: auto;
-  @include change-image-2("assets/images/second-image-small.png", "assets/images/second-image-medium.png", "assets/images/second-image-big.png");
+  @include change-image("assets/images/second-image-small.png", "assets/images/second-image-medium.png", "assets/images/second-image-big.png");
 }
 
 .responsive-image-3 {
-  width: 100%;
-  height: auto;
-  @include change-image-2("assets/images/third-image-small.png", "assets/images/third-image-medium.png", "assets/images/third-image-big.png");
+  @include change-image("assets/images/third-image-small.png", "assets/images/third-image-medium.png", "assets/images/third-image-big.png");
 }
 
 .responsive-image-4 {
-  width: 100%;
-  height: auto;
-  @include change-image-2("assets/images/fourth-image-small.png", "assets/images/fourth-image-medium.png", "assets/images/fourth-image-big.png");
+  @include change-image("assets/images/fourth-image-small.png", "assets/images/fourth-image-medium.png", "assets/images/fourth-image-big.png");
 }
 
 @media (min-width: 769px) and (max-width: 1440px) {

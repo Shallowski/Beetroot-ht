@@ -12,50 +12,16 @@
   letter-spacing: $letter-spacing;
 }
 
-@mixin change-image-1($image-small, $image-medium, $image-big) {
-  content: url($image-small);
+@mixin change-image($small, $medium, $big) {
+  width: 100%;
+  height: auto;
+  content: url($small);
 
   @media (min-width: 769px) and (max-width: 1440px) {
-    content: url($image-medium);
+    content: url($medium);
   }
 
   @media (min-width: 1441px) {
-    content: url($image-big);
-  }
-}
-
-@mixin change-image-2($image-small, $image-medium, $image-big) {
-  content: url($image-small);
-
-  @media (min-width: 769px) and (max-width: 1440px) {
-    content: url($image-medium);
-  }
-
-  @media (min-width: 1441px) {
-    content: url($image-big);
-  }
-}
-
-@mixin change-image-3($image-small, $image-medium, $image-big) {
-  content: url($image-small);
-
-  @media (min-width: 769px) and (max-width: 1440px) {
-    content: url($image-medium);
-  }
-
-  @media (min-width: 1441px) {
-    content: url($image-big);
-  }
-}
-
-@mixin change-image-4($image-small, $image-medium, $image-big) {
-  content: url($image-small);
-
-  @media (min-width: 769px) and (max-width: 1440px) {
-    content: url($image-medium);
-  }
-
-  @media (min-width: 1441px) {
-    content: url($image-big);
+    content: url($big);
   }
 }
