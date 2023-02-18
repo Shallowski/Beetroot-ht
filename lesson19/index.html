@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive navigation lesson19</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar__logo">
+        <ul>
+          <li class="row"><img src="assets/images/logo.svg" alt="logo" class="logo">
+            <p class="description logo">LightBoard</p><button><img src="assets/images/arrow.svg" alt="arrow"><img
+                src="assets/images/arrow-right.svg" alt="arrow"></button>
+          </li>
+          <li class="row"><img src="assets/images/dashboard.svg" alt="dashboard" class="icon">
+            <p class="description">Dashboard</p>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__apps">
+        <ul>
+          <li>
+            <div class="divider"><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="2" y1="2" x2="38" y2="2" stroke="#9E8CFC" stroke-width="4" stroke-linecap="round"
+                  stroke-dasharray="8 8" />
+              </svg>
+            </div>
+            <p class="description">APPS</p>
+          </li>
+          <li><img src="assets/images/mail.svg" alt="bubble" class="icon">
+            <img src="assets/images/badge-green.svg" alt="badge" class="badge">
+            <p class="description">Email</p>
+          </li>
+          <li><img src="assets/images/bubble.svg" alt="bubble" class="icon">
+            <img src="assets/images/badge-red.svg" alt="badge" class="badge">
+            <p class="description">Chats</p>
+          </li>
+          <li><img src="assets/images/calendar.svg" alt="calendar" class="icon">
+            <img src="assets/images/badge-yellow.svg" alt="badge" class="badge">
+            <p class="description">Calendar</p>
+          </li>
+          <li><img src="assets/images/news.svg" alt="news" class="icon">
+            <p class="description">News</p>
+          </li>
+          <li><img src="assets/images/study1.svg" alt="study" class="icon">
+            <p class="description">Knowledge</p>
+          </li>
+          <li><img src="assets/images/stack.svg" alt="stack" class="icon">
+            <p class="description">File manager</p>
+          </li>
+          <li><img src="assets/images/location.svg" alt="location" class="icon">
+            <p class="description">Leaflet maps</p>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__auth-pages">
+        <ul>
+          <li>
+            <div class="divider"><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="2" y1="2" x2="38" y2="2" stroke="#9E8CFC" stroke-width="4" stroke-linecap="round"
+                  stroke-dasharray="8 8" />
+              </svg>
+            </div>
+            <p class="description">AUTH PAGES</p>
+          </li>
+          <li><img src="assets/images/profile.svg" alt="profile" class="icon">
+            <p class="description">Profile</p>
+          </li>
+          <li><img src="assets/images/lock.svg" alt="lock" class="icon">
+            <p class="description">Permissions</p>
+          </li>
+          <li><img src="assets/images/log-out.svg" alt="log-out" class="icon">
+            <p class="description">Log Out</p>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__user-int">
+        <ul>
+          <li>
+            <div class="divider"><svg width="40" height="4" viewBox="0 0 40 4" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="2" y1="2" x2="38" y2="2" stroke="#9E8CFC" stroke-width="4" stroke-linecap="round"
+                  stroke-dasharray="8 8" />
+              </svg>
+            </div>
+            <p class="description">USER INTERFACE</p>
+          </li>
+          <li><img src="assets/images/eye.svg" alt="eye" class="icon">
+            <p class="description">Feather</p>
+          </li>
+          <li><img src="assets/images/wallet.svg" alt="wallet" class="icon">
+            <p class="description">Ecommerce</p>
+          </li>
+          <li><img src="assets/images/lab.svg" alt="lab" class="icon">
+            <p class="description">Components</p>
+          </li>
+          <li><img src="assets/images/page.svg" alt="page" class="icon">
+            <p class="description">Pages</p>
+          </li>
+          <li><img src="assets/images/pen.svg" alt="pen" class="icon">
+            <p class="description">Editor</p>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <header class="header">
+      <nav class="top-nav">
+        <div class="top-nav__left">
+          <ul>
+            <li> <a href="#"><img src="assets/images/mail.svg" alt="mail"></a> </li>
+            <li><a href="#"><img src="assets/images/bubble.svg" alt="bubble"></a></li>
+            <li><a href="#"><img src="assets/images/calendar.svg" alt="calendar"></a></li>
+            <li><a href="#"><img src="assets/images/star.svg" alt="star"></a></li>
+          </ul>
+        </div>
+        <div class="top-nav__right">
+          <div class="language"><a href="#"> <img src="assets/images/lang-icon.svg"
+                alt="language"></a><span>English</span></div>
+          <div class="settings">
+            <ul>
+              <li><a href="#"><img src="assets/images/change-theme.svg" alt="theme"></a></li>
+              <li><a href="#"><img src="assets/images/search.svg" alt="search"></a></li>
+              <li><a href="#"><img src="assets/images/set.svg" alt="set"></a></li>
+            </ul>
+          </div>
+          <div class="profile"><a href="#"><img src="assets/images/profile-photo.svg" alt="set"></a></div>
+        </div>
+      </nav>
+
+    </header>
+  </div>
+  <script>
+    const button = document.querySelector("button");
+    button.addEventListener("click", function () {
+      document.querySelector(".sidebar").classList.toggle("active");
+      document.querySelector(".header").classList.toggle("header-active")
+    });
+  </script>
+</body>
+
+</html>

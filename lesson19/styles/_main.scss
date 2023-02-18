@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.divider {
+  display: none;
+}
+
+.sidebar {
+  padding: 30px 0px;
+  width: 220px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: 0;
+  top: 0;
+  &__logo .row {
+    padding-bottom: 30px;
+  }
+  .logo {
+    font-weight: 500;
+    padding-right: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      position: relative;
+      cursor: pointer;
+      &:hover {
+        background-color: $purple-light;
+        .icon {
+          filter: brightness(0) invert(1);
+        }
+      }
+
+      > * {
+        padding: 0 10px;
+      }
+      .description {
+        margin: 0;
+      }
+
+      button {
+        padding-left: 25px;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
+
+.badge {
+  position: absolute;
+  left: 16px;
+  bottom: 30px;
+}
+
+button img:nth-child(2) {
+  display: none;
+}
+
+.active {
+  @include minimize-menu;
+}
+
+header {
+  margin: 30px 25px 68px 245px;
+  padding: 10px 20px;
+  height: 80px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  .top-nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    > * {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 10px;
+        &:first-child {
+          padding-left: 0;
+        }
+        &:hover {
+          filter: invert(62%) sepia(50%) saturate(3347%) hue-rotate(213deg)
+            brightness(102%) contrast(98%);
+        }
+      }
+    }
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  img {
+    padding-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: $gray-dark;
+  }
+}
+
+.settings {
+  padding: 0 20px;
+}
+
+.header-active {
+  margin-left: 111px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    @include minimize-menu;
+  }
+  header {
+    margin-left: 111px;
+  }
+}
