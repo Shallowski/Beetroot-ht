@@ -1,0 +1,27 @@
+@mixin font-set(
+  $font,
+  $font-weight,
+  $font-size,
+  $line-height,
+  $letter-spacing
+) {
+  font-family: $font;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin change-image($small, $medium, $big) {
+  width: 100%;
+  height: auto;
+  content: url($small);
+
+  @media (min-width: 769px) and (max-width: 1440px) {
+    content: url($medium);
+  }
+
+  @media (min-width: 1441px) {
+    content: url($big);
+  }
+}
